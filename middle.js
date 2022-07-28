@@ -1,3 +1,20 @@
+//Starting Notes
+//The middle function should return an array with only the middle element(s) of the provided array
+//For arrays with one or two elements, there is no middle. Return an empty array. 
+// --> middle([1]) // => []
+//--> middle([1, 2]) // => []
+
+//For arrays with odd number of elements, an array containing a single middle element should be returned
+// --> middle([1, 2, 3]) // => [2]
+// --> middle([1, 2, 3, 4, 5]) // => [3]
+
+//For arrays with an even number of elements, an array containing the two elements in the middle should be returned
+// --> middle([1, 2, 3, 4]) // => [2, 3]
+// --> middle([1, 2, 3, 4, 5, 6]) // => [3, 4] 
+
+//We can and should use the assertArraysEqual function for testing our new function 
+
+
 const middle = function(array) {
   if (array.length < 3) {
     return [];
@@ -14,42 +31,21 @@ const middle = function(array) {
 module.exports = middle;
 
 
+//Test Assertions
+// TEST/ASSERTION FUNCTIONS
+//const eqArrays = function(...) {
+  //...
+//}
 
-//NOTES
-//const eqArrays = require('./eqArrays');
 //const assertArraysEqual = function(actual, expected) {
-  //if (eqArrays(actual, expected)) {
-    //console.log(`✅✅✅ Assertion Passed: "${actual}" === "${expected}"`);
-  //} else {
-   // console.log(`🛑🛑🛑 Assertion Failed: "${actual}" !== "${expected}"`);
-    //  }
-    //};
+  //...
+}
 
-//module.exports = assertArraysEqual;
+// ACTUAL FUNCTION
+//const middle = function(array) {
+  //...
+//}
 
-//const eqArrays = function(array1, array2) {
-    //if (array1.length !== array2.length) {
-     
-    //  return false;
-   // }
-    //for (let i = 0; i < array1.length; i++) {
-     // if (Array.isArray(array1[i]) && (eqArrays(array1[i], array2[i]) === false)) {
-        
-       // return false;
-      //}
-     // if (!(Array.isArray(array1[i])) && array1[i] !== array2[i]) {
-        
-       // return false;
-   //   }
-   // } 
-  //  return true;
- // };
-  
-  //module.exports = eqArrays;
+// TEST CODE
+// ...
 
-//middle([1]) // => []
-//middle([1, 2]) // => []
-//middle([1, 2, 3]) // => [2]
-//middle([1, 2, 3, 4, 5]) // => [3]
-//middle([1, 2, 3, 4]) // => [2, 3]
-//middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
